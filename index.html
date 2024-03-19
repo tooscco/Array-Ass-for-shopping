@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teeboy shoping Mall</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    <div class="first-div" align="center">
+        <h1>Tee-Commerce</h1>
+        <form class="form-floating">
+            <input type="text" class="form-control" id="items" id="floatingInputInvalid" placeholder="Enter your item" value="">
+            <label for="floatingInputInvalid">Enter your item</label>
+          </form>
+        <button onclick="addItem()" class="first-btn mt-3">Add item</button>
+        <div id="err"></div>
+        <div id="show"></div>
+        <button onclick="deleteFirst()">Delete first item</button>
+        <button onclick="deleteLast()">Delete last item</button>
+        <button onclick="deleteAny()">Delete any item</button>
+        <button onclick="editItem()">Edit item</button>
+        <button onclick="addStart()">Add item to the start</button>
+    </div>
+    
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
