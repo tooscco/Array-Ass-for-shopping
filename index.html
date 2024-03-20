@@ -6,24 +6,47 @@
     <title>Teeboy shoping Mall</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body>
-    <div class="first-div" align="center">
-        <h1>Tee-Commerce</h1>
-        <form class="form-floating">
-            <input type="text" class="form-control" id="items" id="floatingInputInvalid" placeholder="Enter your item" value="">
+<body style="background: linear-gradient(white, #000000); height: 100vh;">
+    <div class="first-fir-first-div">
+    <div class="first-div col-lg-6 col-md-8 col-11 mt-2 p-lg-5 p-3 shadow-sm m-auto">
+        <h1 class=" my-3 p-3 text-center">Tee-Store</h1>
+        <p id="err" class="alert alert-danger text-center p-2 animate__animated animate__shakeX animate__infinite">Fill in the empty spaces</p>
+        <form class="form-floating my-3 btndivDiv">
+            <input type="text" class="form-control shadow-sm" id="items" id="floatingInputInvalid" placeholder="Enter your item" value="">
             <label for="floatingInputInvalid">Enter your item</label>
           </form>
-        <button onclick="addItem()" class="first-btn mt-3">Add item</button>
-        <div id="err"></div>
-        <div id="show"></div>
-        <button onclick="deleteFirst()">Delete first item</button>
-        <button onclick="deleteLast()">Delete last item</button>
-        <button onclick="deleteAny()">Delete any item</button>
-        <button onclick="editItem()">Edit item</button>
-        <button onclick="addStart()">Add item to the start</button>
+        <button onclick="addItem()" class="first-btn mt-3 bg-secondary ">Add item</button>
     </div>
-    
+
+    <div id="notifyDiv" class="col-lg-6 col-md-8 col-11 m-auto p-3 mt-3 shadow-sm"></div>
+    <div class="divBtn col-lg-6 col-md-8 col-11 m-auto my-3 p-lg-3 px-lg-5 p-3 bg-secondary" id="divBtn">
+        <div id="show"></div>
+        <div class="row">
+            <div class="col-lg-3 col">
+                <button onclick="deleteLast()"  class="shadow-sm my-3 m-auto p-2">Delete last item</button>
+            </div>
+            <div class="col-lg-3 col">
+                <button onclick="deleteAny()" class="shadow-sm my-3 m-auto p-2">Delete any item</button>
+            </div>
+            <div class="col-lg-3 col">
+                <button onclick="deleteFirst()" class="shadow-sm my-3 m-auto p-2">Delete first item</button>
+            </div>
+            <div class="col-lg-3 col">
+                <button onclick="editItem()" class="shadow-sm my-3 m-auto p-2">Edit any items</button>
+            </div>
+            <div class="col-lg-3 col">
+                <button onclick="delAll()" class="shadow-sm my-3 m-auto p-2">Delete all item</button>
+            </div>
+            <div class="col-lg-3 col">
+                <button onclick="addFirst()" class="shadow-sm my-3 m-auto p-2">Add to the start</button>
+            </div>
+        </div>
+    </div>
+    </div>
 
 
 

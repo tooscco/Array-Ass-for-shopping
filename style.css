@@ -4,8 +4,14 @@
     box-sizing: border-box;
 }
 
+.first-fir-first-div{
+    background: linear-gradient(white, #252525);
+    width: 100%;
+    height: 100 !important;
+}
+
 .table{
-    border: 2px solid red !important;
+    border: 2px solid #000000 !important;
 }
 
 .first-div{
@@ -16,8 +22,32 @@
 .first-btn{
     width: 100%;
     height: 7vh;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 tr, td, th{
-    border: 2px solid red !important;
+    border: 1.5px solid #000000 !important;
+}
+
+#err, .divBtn{
+    display: none;
+}
+
+h1{
+    font-size: 55px !important;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px #7f7d7d;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: 2px underline rgb(127, 127, 210) !important;
+}
+
+.btndivDiv{
+    outline: none !important;
+    border: none !important;
+}
+
+.divBtn, p{
+    border-radius: 5px !important;
 }
