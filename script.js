@@ -21,6 +21,21 @@ function addItem() {
     
 } 
 
+function addFirst(){
+    if (firstAdd.value == ''){
+        alert('add')
+
+    } else {
+        cart.unshift(document.getElementById('firstAdd').value);
+        console.log(cart);
+        document.getElementById('firstAdd').value = ''
+        displayItem()
+
+    }
+
+
+}
+
 function deleteFirst(){
     cart.shift()
     displayItem()
@@ -31,10 +46,10 @@ function deleteLast(){
     displayItem()
 }
 
-function addFirst(){
-    cart.unshift(items.value)
-    displayItem()
-}
+// function addFirst(){
+//     cart.unshift(items.value)
+//     displayItem()
+// }
 
 function delAll(){
     var confirmation = confirm('Are you sure you want to delete. This action is irreversible')
@@ -44,11 +59,25 @@ function delAll(){
     }
 }
 
-function editItem() {
-    var ediAny = Number(prompt('which number are you editing'))
-    var replay = prompt('new value')
-    cart.splice(ediAny-1, 1, replay)
-    displayItem()
+function plsEditNow() {
+    if(newNumber.value === '' && newValue.value === ''){
+alert('check number')
+    }else{ 
+        if ((Number(newNumber.value)) > cart.length) {
+            alert('you have exceeded')
+        }else{
+            var ediAny = Number(document.getElementById('newNumber').value)
+            var replay = document.getElementById('newValue').value
+            cart.splice(ediAny-1, 1, replay)
+            document.getElementById('newNumber').value = ''
+            document.getElementById('newValue').value = ''
+            displayItem()
+        }
+    }
+    // var ediAny = Number(prompt('which number are you editing'))
+    // var replay = prompt('new value')
+    // cart.splice(ediAny-1, 1, replay)
+    // displayItem()
 }
 
 function deleteAny(){
