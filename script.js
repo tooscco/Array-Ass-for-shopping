@@ -24,7 +24,6 @@ function addItem() {
 function addFirst(){
     if (firstAdd.value == ''){
         alert('add')
-
     } else {
         cart.unshift(document.getElementById('firstAdd').value);
         console.log(cart);
